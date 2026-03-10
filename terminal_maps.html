@@ -906,19 +906,19 @@
         <img src="Dire_Marsh_Map.jpg" alt="Dire Marsh Terminal Map">
 
         <svg viewBox="0 0 1100 1060" xmlns="http://www.w3.org/2000/svg">
-
-          <!-- ROUTE 1: West Gate (end) -->
-          <g class="zone-group dm-zone" data-zone="dm-route1" style="cursor:pointer">
-            <circle cx="120" cy="472" r="70" fill="transparent"/>
-            <circle class="zone-fill" cx="120" cy="472" r="55" fill="#00d4ff"/>
-            <circle class="zone-ring" cx="120" cy="472" r="55" fill="none" stroke="#00d4ff" stroke-width="3"/>
-          </g>
-
+          
           <!-- ROUTE 1: AI Uplink (start) -->
           <g class="zone-group dm-zone" data-zone="dm-route1" style="cursor:pointer">
             <circle cx="583" cy="712" r="70" fill="transparent"/>
             <circle class="zone-fill" cx="583" cy="712" r="55" fill="#00d4ff"/>
             <circle class="zone-ring" cx="583" cy="712" r="55" fill="none" stroke="#00d4ff" stroke-width="3"/>
+          </g> 
+          
+          <!-- ROUTE 1: West Gate (end) -->
+          <g class="zone-group dm-zone" data-zone="dm-route1" style="cursor:pointer">
+            <circle cx="120" cy="472" r="70" fill="transparent"/>
+            <circle class="zone-fill" cx="120" cy="472" r="55" fill="#00d4ff"/>
+            <circle class="zone-ring" cx="120" cy="472" r="55" fill="none" stroke="#00d4ff" stroke-width="3"/>
           </g>
 
           <!-- ROUTE 2: Complex (start) -->
@@ -961,7 +961,19 @@
         <!-- ROUTE 1: West Gate + AI Uplink -->
         <div class="info-content" id="info-dm-route1">
           <div class="info-zone-label" style="color:#00d4ff">// ROUTE 01</div>
-          <div class="info-zone-title">WEST GATE → AI UPLINK</div>
+          <div class="info-images" style="margin-top:12px">
+            <div class="info-images-label">// AI UPLINK (START)</div>
+            <div class="image-grid">
+              <div class="img-thumb" onclick="openLightbox('dm_aiuplink_1.png', 'AI UPLINK — EXTERIOR')">
+                <img src="dm_aiuplink_1.png" alt="AI Uplink Exterior">
+                <div class="img-thumb-label">EXTERIOR</div>
+              </div>
+              <div class="img-thumb" onclick="openLightbox('dm_aiuplink_2.png', 'AI UPLINK — INTERIOR')">
+                <img src="dm_aiuplink_2.png" alt="AI Uplink Interior">
+                <div class="img-thumb-label">INTERIOR</div>
+              </div>
+            </div>
+          </div>
           <div class="info-divider"></div>
           <div class="info-images">
             <div class="info-images-label">// WEST GATE (END)</div>
@@ -972,19 +984,6 @@
               </div>
               <div class="img-thumb" onclick="openLightbox('dm_westgate_2.png', 'WEST GATE — INTERIOR')">
                 <img src="dm_westgate_2.png" alt="West Gate Interior">
-                <div class="img-thumb-label">INTERIOR</div>
-              </div>
-            </div>
-          </div>
-          <div class="info-images" style="margin-top:12px">
-            <div class="info-images-label">// AI UPLINK (START)</div>
-            <div class="image-grid">
-              <div class="img-thumb" onclick="openLightbox('dm_aiuplink_1.png', 'AI UPLINK — EXTERIOR')">
-                <img src="dm_aiuplink_1.png" alt="AI Uplink Exterior">
-                <div class="img-thumb-label">EXTERIOR</div>
-              </div>
-              <div class="img-thumb" onclick="openLightbox('dm_aiuplink_2.png', 'AI UPLINK — INTERIOR')">
-                <img src="dm_aiuplink_2.png" alt="AI Uplink Interior">
                 <div class="img-thumb-label">INTERIOR</div>
               </div>
             </div>
